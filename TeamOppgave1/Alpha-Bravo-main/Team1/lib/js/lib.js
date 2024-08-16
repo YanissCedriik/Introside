@@ -1,12 +1,15 @@
-function addtocart(productName) {
+function addToCart(productName) {
   // @Nico
   //  cart is constant = ->
   const cart = document.getElementById("cart");
   const item = document.createElement("p");
   item.textContent = productName;
+   
+  // @Nico
+  // Lager en knapp for å fjerne produktet fra handlekurven 
 
   const removeButton = document.createElement("button");
-  removeButton.textContent = "Fjern";
+  removeButton.textContent = "Fejrn";
   removeButton.onclick = function() {
     removeFromCart(item);
   };
@@ -14,15 +17,38 @@ function addtocart(productName) {
   item.appendChild(removeButton);
   cart.appendChild(item);
 
-  updateTotalProducts();
+  updateTotalProducts(productName);
+
+
 }
+
+  // @krigjo25
+  // Oppdaterer totalbeløpet
+  document.getElementById("total-amount").textContent = totalAmount + " kr";
+  return totalAmount;
+
+//Nico@
+// Oppdater det totale antallet produkter i handlekurven
+
+function updateTotalProducts() {
+  const cart = document.getElementById("cart");
+  const totalProductsCount = cart.getElementsByTagName("p").length;
+
+  let totalprice = calculateProducts(totalProductCount);
+
+  document.getElementById("total-products-count").textContent = totalProductsCount;
+
+  
+}
+
 
 function calculateTotal(name, qty) {
   // @krigjo25
   // Denne funksjonen beregner totalbeløpet i handlekurven
 
+
   // Initialisering av en liste med produktnavn
-  const nlist = ["a", "b", "c"];
+  const nlist = ["slightly Old Apple", "Halvspistjokia", "Vintage Pepsi"];
 
   // Initialisering av en liste med tilsvarende priser
   const price = [1, 2, 3]; // Anta at dette er prisene for 'a', 'b', 'c'
@@ -42,36 +68,7 @@ function calculateTotal(name, qty) {
       }
     }
   }
-
-  // @krigjo25
-  // Oppdaterer totalbeløpet
-  document.getElementById("total-amount").textContent = totalAmount + " kr";
-  return totalAmount;
 }
-
-function removeFromCart(item) {
-
-  // legge til en variabel
-  const cart = document.getElementById("cart");
-  if (item) {
-    cart.removeChild(item);
-    updateTotalProducts();
-  } else {
-    console.error("Elementet finnes ikke eller er allerede fjernet.");
-  }
-}
-
-function updateTotalProducts() {
-  const cart = document.getElementById("cart");
-  const totalProductsCount = cart.getElementsByTagName("p").length;
-
-  let totalprice = calculateTotal(totalProductCount);
-
-  document.getElementById("total-products-count").textContent = totalProductsCount;
-
-  
-}
-
 function closeShoppingCart()
 {
   //  Fetch element to show

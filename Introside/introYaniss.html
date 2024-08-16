@@ -10,31 +10,40 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <link rel="stylesheet" href="styles.css">
+
     <script src="java.js"></script>
 
-    <div class="header">Yaniss</div>
+    <div class="header">Lorem Ipsum</div>
 
     <div class="row">
-        <div class="navBar">LinkedIn</div>
-        <div class="navBar white">Instagram</div>
-        <div class="navBar">Facebook</div>
+        <div class="navBar"> <a href="https://www.linkedin.com/in/yaniss-fiskum-041b959b/">Linked</a>
+            <img src="introIMG/linkedin.svg">
+        </div>
+        <div class="navBar white"><img src="introIMG/instagram.svg" alt=""> <a href="https://www.instagram.com">
+                Instagram</a></div>
+        <div class="navBar white"><img src="introIMG/facebook.svg" alt=""> <a href="https://www.facebook.com">
+                Facebook</a></div>
     </div>
 
     <div class="row">
 
-        <div class="column offWhite1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+        <div id="Tab1" class="column offWhite1">
+            <h3 onclick="closeTab1()">Lorem ipsum</h3>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
             scelerisque metus eget aliquet convallis. Ut pulvinar ac lacus a
             gravida. Vestibulum ante ipsum primis in faucibus orci luctus et
             ultrices posuere cubilia curae; Maecenas tristique finibus orci sit amet
             euismod. Pellentesque nec risus quis sem rhoncus malesuada. Quisque
-            scelerisque mauris vel nisl viverra, non semper sem gravida.</div>
+            scelerisque mauris vel nisl viverra, non semper sem gravida.
+        </div>
 
-        <div class="column offWhite2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+        <div class="column offWhite2">
+           <div id="Tab2"><h3 onclick="closeTab2()">Vivamus scelerisque</h3>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
             scelerisque metus eget aliquet convallis. Ut pulvinar ac lacus a
             gravida. Vestibulum ante ipsum primis in faucibus orci luctus et
             ultrices posuere cubilia curae; Maecenas tristique finibus orci sit amet
@@ -46,19 +55,88 @@
             ultrices posuere cubilia curae; Maecenas tristique finibus orci sit amet
             euismod. Pellentesque nec risus quis sem rhoncus malesuada. Quisque
             scelerisque mauris vel nisl viverra, non semper sem gravida.</div>
+        </div>
 
-        <div class="column offWhite3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+        <div id="Tab3" class="column offWhite1">
+            <h3 onclick="closeTab3()">Sem gravida</h3>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
             scelerisque metus eget aliquet convallis. Ut pulvinar ac lacus a
             gravida. Vestibulum ante ipsum primis in faucibus orci luctus et
             ultrices posuere cubilia curae; Maecenas tristique finibus orci sit amet
             euismod. Pellentesque nec risus quis sem rhoncus malesuada. Quisque
-            scelerisque mauris vel nisl viverra, non semper sem gravida.</div>
+            scelerisque mauris vel nisl viverra, non semper sem gravida.
+        </div>
+
     </div>
 
-    <div class="header">
+    <div class="header row">
         <div>
-            <img src="introIMG/99749949.jpg" alt="Placeholder IMG">
+            <img class="mediumImage imgBorder" src="introIMG/99749949.jpg" alt="Placeholder IMG">
         </div>
+        <div><img class="mediumImageRound imgBorder" src="introIMG/99749949.jpg" alt="Placeholder IMG"></div>
+        <div><img class="mediumImage imgBorder" src="introIMG/99749949.jpg" alt="Placeholder IMG"></div>
+    </div>
+
+    <div class="header row">
+        <div>
+            <img class="mediumImage imgBorder" src="introIMG/99749949.jpg" alt="Placeholder IMG">
+        </div>
+        <div><img class="mediumImage imgBorder" src="introIMG/99749949.jpg" alt="Placeholder IMG"></div>
+        <div><img class="mediumImage imgBorder" src="introIMG/99749949.jpg" alt="Placeholder IMG"></div>
+    </div>
+
+    <div class="content row">
+        <div style="padding: 30px; text-align: left;">
+            <p> <strong>Lorem ipsum</strong> dolor sit amet, consectetur adipiscing elit. Vivamus
+                scelerisque metus eget aliquet convallis. Ut pulvinar ac lacus a
+                gravida. Vestibulum ante ipsum primis in faucibus orci luctus et
+                ultrices posuere cubilia curae; Maecenas tristique finibus orci sit amet
+                euismod. Pellentesque nec risus quis sem rhoncus malesuada. Quisque
+                scelerisque mauris vel nisl viverra, non semper sem gravida.Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. <br />
+                <br />
+                Vivamus scelerisque metus eget aliquet convallis. Ut pulvinar ac lacus a
+                gravida. Vestibulum ante ipsum primis in faucibus orci luctus et
+                ultrices posuere cubilia curae; Maecenas tristique finibus orci sit amet
+                euismod. Pellentesque nec risus quis sem rhoncus malesuada. Quisque
+                scelerisque mauris vel nisl viverra, non semper sem gravida.
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                <br />
+                <br />
+                <li>scelerisque mauris vel nisl viverra, non semper sem gravida.</li>
+                <li> scelerisque metus eget aliquet convallis. Ut pulvinar ac lacus</li>
+                <li> Vestibulum ante ipsum primis in faucibus orci luctus</li>
+                <br />
+                ultrices posuere cubilia curae; Maecenas tristique finibus orci sit amet
+                euismod. Pellentesque nec risus quis sem rhoncus malesuada. Quisque
+                scelerisque mauris vel nisl viverra, non semper sem gravida.Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Vivamus
+                scelerisque metus eget aliquet convallis. Ut pulvinar ac lacus a
+                gravida. Vestibulum ante ipsum primis in faucibus orci luctus et
+                ultrices posuere cubilia curae; Maecenas tristique finibus orci sit amet
+                euismod. Pellentesque nec risus quis sem rhoncus malesuada. Quisque
+            </p>
+
+        </div>
+
+        <div style="padding: 30px; text-align: left;">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                scelerisque metus eget aliquet convallis. Ut pulvinar ac lacus a
+                gravida. Vestibulum ante ipsum primis in faucibus orci luctus et
+                ultrices posuere cubilia curae; Maecenas tristique finibus orci sit amet
+                euismod. Pellentesque nec risus quis sem rhoncus malesuada. Quisque
+                scelerisque mauris vel nisl viverra, non semper sem gravida.Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit..</p>
+            <p>Vivamus scelerisque metus eget aliquet convallis. Ut pulvinar ac lacus a
+                gravida. Vestibulum ante ipsum primis in faucibus orci luctus et
+                ultrices posuere cubilia curae; Maecenas tristique finibus orci sit amet
+                euismod. Pellentesque nec risus quis sem rhoncus malesuada. Quisque
+                scelerisque mauris vel nisl viverra, non semper sem gravida</p>
+        </div>
+
+    </div>
+
+    <div>
 
     </div>
 
@@ -70,8 +148,8 @@
                 gravida. Vestibulum ante ipsum primis in faucibus orci luctus et
                 ultrices posuere cubilia curae; Maecenas tristique finibus orci sit amet
                 euismod. Pellentesque nec risus quis sem rhoncus malesuada. Quisque
-                scelerisque mauris vel nisl viverra, non semper sem gravida.
-                Suspendisse ullamcorper vehicula elit, ac dapibus dolor porta sit amet.
+                scelerisque mauris vel nisl viverra, non semper sem gravida.</p>
+            <p>Suspendisse ullamcorper vehicula elit, ac dapibus dolor porta sit amet.
                 Etiam quis ex suscipit, mattis ex sed, suscipit nunc.</p>
         </div>
     </div>
